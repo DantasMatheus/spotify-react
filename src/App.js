@@ -1,24 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from '../src/components/Header/Header';
+import Sidebar from './components/Sidebar/Sidebar';
+import Footer from './components/Footer/Footer';
+import Main from './components/Main/Main';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>Imersão Front-End Alura 2025</h2>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Sidebar />
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
 }
