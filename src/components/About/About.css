@@ -1,0 +1,78 @@
+.about-container {
+    min-height: 68vh;
+    padding: 48px;
+    margin: 10px 15px 90px 330px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #1d1d1d, #121212 65%);
+    box-sizing: border-box;
+}
+
+.about-hero {
+    max-width: 680px;
+}
+
+.about-eyebrow {
+    color: #1db954;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin: 0 0 16px;
+    text-transform: uppercase;
+}
+
+.about-hero h1 {
+    color: #fff;
+    font-size: 48px;
+    margin: 0 0 20px;
+}
+
+.about-introduction {
+    color: #d9d9d9;
+    font-size: 22px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.about-content {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 56px;
+}
+
+.about-card {
+    background-color: #242424;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.about-card--highlight {
+    background-color: #1db954;
+}
+
+.about-card h2 {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 0 12px;
+}
+
+.about-card p {
+    color: #d9d9d9;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.about-card--highlight p {
+    color: #071b0d;
+}
+
+@media (max-width: 900px) {
+    .about-container {
+        margin-left: 320px;
+        padding: 32px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+}

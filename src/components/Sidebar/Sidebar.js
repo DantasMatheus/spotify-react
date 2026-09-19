@@ -25,6 +25,12 @@ const Sidebar = () => {
                                 <span>Buscar</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="/sobre-mim">
+                                <span className="fa fa-user"></span>
+                                <span>Sobre mim</span>
+                            </a>
+                        </li>
                     </ul>
             </nav>
             <div className="library">
