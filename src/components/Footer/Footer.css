@@ -3,34 +3,55 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to right, #ae2896, #509bf5);
     padding: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.disclaimer-premium-music-container {
+    display: flex;
+    align-items: center;
+}
+.disclaimer-premium-music-info{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
 
-.disclaimer-premium .disclaimer-premium__title {
-    color: #ffffff;
-    text-transform: uppercase;
+.disclaimer-premium-music-info-text{
+    display:flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.disclaimer-premium-music-info h4{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+.disclaimer-premium-music-info h5{
+    color: #b3b3b3;
+    font-size: 14px;
     font-weight: 400;
-    font-size: 16px;
-    margin-bottom: 10px;
+    margin: 0;
 }
-
-.disclaimer-premium .disclaimer-premium__subtitle {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.disclaimer-premium button {
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 14px 30px;
-    border: 0px;
-    border-radius: 40px;
+.disclaimer-premium-music-info .disclaimer-premium-music-additional-controls-button{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
     cursor: pointer;
+    margin-left: auto;
+}
+
+.disclaimer-premium-music-logo{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    margin: 16px;
+    margin-left: 0;
 }
