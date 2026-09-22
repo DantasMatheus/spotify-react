@@ -5,9 +5,10 @@ import img from '../../assets/playlist/1.jpeg';
 const Footer = () => {
     return(
         <footer className="disclaimer-premium">
+            {/* 1. Music Info */}
             <div className="disclaimer-premium-music-container">
                 <div className="disclaimer-premium-music-logo">
-                    <img src={img} alt="Spotify Logo" />
+                    <img src={img} alt="playlist-image" />
                 </div>
 
                 <div className="disclaimer-premium-music-info">
@@ -19,10 +20,9 @@ const Footer = () => {
                         <i className="bi bi-heart"></i>
                     </button>
                 </div>
-
-                <div className="disclaimer-premium-music-progress">
-                    <input type="range" className="disclaimer-premium-music-progress-bar" />
-                </div>
+            </div>
+            {/* 2 Music Player */}
+            <div className="disclaimer-premium-music-time">
                 <div className="disclaimer-premium-music-controls">
                     <button className="disclaimer-premium-music-controls-button">
                         <i className="bi bi-shuffle"></i>
@@ -40,15 +40,21 @@ const Footer = () => {
                         <i className="bi bi-repeat"></i>
                     </button>
                 </div>
+                <div className="disclaimer-premium-music-progress">
+                    <input type="range" className="disclaimer-premium-music-progress-bar" />
+                </div>
+            </div>
+            {/* Music Functions */}
+           <div className="disclaimer-premium-music-functions"> 
                 <div className="disclaimer-premium-music-volume">
                     <i className="bi bi-volume-up"></i>
                     <input type="range" className="disclaimer-premium-music-volume-bar" />
                 </div>
                 <div className="disclaimer-premium-music-additional-controls">
-                    <button className="disclaimer-premium-music-additional-controls-button">
+                    <button className="disclaimer-premium-music-additional-controls-list">
                         <i className="bi bi-list"></i>
                     </button>
-                    <button className="disclaimer-premium-music-additional-controls-button">
+                    <button className="disclaimer-premium-music-additional-controls-fullscreen">
                         <i className="bi bi-fullscreen"></i>
                     </button>
                 </div>
